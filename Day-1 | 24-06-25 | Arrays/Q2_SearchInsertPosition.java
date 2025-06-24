@@ -36,7 +36,6 @@ public class Q2_SearchInsertPosition {
 
         int[] nums = {1,3,5,6};
         int target = 7;
-        // twoSumOptimal(nums, target);
         int result = searchInsertPosition(nums, target);
         System.out.println("Result Index: " + result);
     }
