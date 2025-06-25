@@ -1,26 +1,92 @@
 public class Q3_SmallestPositiveMissing {
 
-     public static int smallestPositiveMissing(int[] nums){
+    public static int missingNumber(int[] arr) {
 
-        int max = Integer.MIN_VALUE;
-        int sum =0;
+        // int i = 0;
 
-        // [-2,1,-3,4,-1,2,1,-5,4]
-        for(int i=0;i<nums.length;i++){
-            sum+=nums[i];
-            if(max<sum){
-                max=sum;
+        // while (i < arr.length) {
+        // int correct = arr[i] - 1;
+        // System.out.println("correct " + correct);
+        // System.out.println("arr[i] > 0 "+ (arr[i] > 0) );
+        // System.out.println("arr[i] <= arr.length "+ (arr[i] <= arr.length) );
+        // System.out.println("arr[i] != arr[correct] " + (arr[i] != arr[correct]) );
+        // if (arr[i] > 0 && arr[i] <= arr.length && arr[i] != arr[correct]) {
+        // int temp = arr[i];
+        // arr[i] = arr[correct];
+        // arr[correct] = temp;
+        // } else {
+        // i++;
+        // }
+        // }
+
+        int n = arr.length;
+        // { 2, -3, 4, 1, 1, 7 };
+        for (int i = 0; i < n; i++) {
+
+            // if arr[i] is within the range [1, n] and arr[i]
+            // is not placed at (arr[i]-1)th index in arr
+            // System.out.println(i + "------------starts-------------");
+            while (arr[i] >= 1 && arr[i] <= n
+                    && arr[i] != arr[arr[i] - 1]) {
+                // then swap arr[i] and arr[arr[i]-1] to
+                // place arr[i] to its corresponding index
+                // System.out.println(arr[i] + " " + arr[arr[i] - 1]);
+                int temp = arr[i];
+                arr[i] = arr[arr[i] - 1];
+                arr[temp - 1] = temp;
             }
-            if(sum<0){
-                sum=0;
+            // System.out.println();
+            // for (int x = 0; x < arr.length; x++) {
+            //     System.out.print(arr[x] + " ");
+            // }
+            // System.out.println();
+            // System.out.println(i + "-----------ends--------------");
+            // System.out.println();
+            // System.out.println();
+        }
+
+        // System.out.println();
+        // for (int x = 0; x < arr.length; x++) {
+        //     System.out.print(arr[x] + " ");
+        // }
+        // System.out.println();
+
+        for (int j = 0; j < arr.length; j++) {
+            if (arr[j] != j + 1) {
+                return j + 1;
             }
         }
 
-        return max;
+        return arr.length + 1;
+    }
+
+    public static int smallestPositiveMissing(int[] arr) {
+
+         int n = arr.length;
+
+         // using cyclic sort
+        for (int i = 0; i < n; i++) {
+
+            while (arr[i] >= 1 && arr[i] <= n
+                    && arr[i] != arr[arr[i] - 1]) {
+              
+                int temp = arr[i];
+                arr[i] = arr[arr[i] - 1];
+                arr[temp - 1] = temp;
+            }
+            
+        }
+
+        for (int j = 0; j < arr.length; j++) {
+            if (arr[j] != j + 1) {
+                return j + 1;
+            }
+        }
+        return arr.length + 1;
     }
 
     public static void main(String[] args) {
-        
+
         // Examples:
         // Input: arr[] = [2, -3, 4, 1, 1, 7]
         // Output: 3
@@ -32,9 +98,9 @@ public class Q3_SmallestPositiveMissing {
         // Output: 1
         // Explanation: Smallest positive missing number is 1.
 
-        int[] nums = {};
-        int result = functionName(nums);
-        System.out.println("result "+result);
+        int[] nums = { 5, 3, 2, 5, 1 };
+        int result = smallestPositiveMissing(nums);
+        System.out.println("result " + result);
 
     }
 }
