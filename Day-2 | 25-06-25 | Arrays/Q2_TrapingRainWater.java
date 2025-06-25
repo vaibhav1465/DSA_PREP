@@ -37,6 +37,16 @@ public class Q2_TrapingRainWater {
     }
 
     public static void main(String[] args) {
+
+    // Input: height = [0,1,0,2,1,0,1,3,2,1,2,1]
+    // Output: 6
+    // Explanation: The above elevation map (black section) is represented by array [0,1,0,2,1,0,1,3,2,1,2,1]. In this case, 6 units of rain water (blue section) are being trapped.
+
+
+    // Input: height = [4,2,0,3,2,5]
+    // Output: 9
+
+
         int[] nums = { 1,8,6,2,5,4,8,3,7 };
         int result = trapingRainWater(nums);
         System.out.println("result --- " + result);
