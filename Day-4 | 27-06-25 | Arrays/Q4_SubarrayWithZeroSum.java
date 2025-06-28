@@ -1,54 +1,8 @@
-import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
 
-public class Main {
-    public static ArrayList<Integer> findDuplicates(int[] nums) {
-        // code here
-       int n= nums.length;
-       ArrayList<Integer> result = new ArrayList<Integer>();
-       HashSet<Integer> s = new HashSet<>();
-        for(int i=0;i<n;i++){
-            boolean added = s.add(nums[i]);
-            if(!added){
-                result.add(nums[i]);
-            }
-        }
-        return result;
-    }
-
-    public static int maxProduct(int[] arr) {
-        // code here
-
-        int n = arr.length;
-        int lmax =arr[0];
-        int rmax = arr[n-1];
-        int maxProd=Math.max(lmax,rmax);
-        for(int i=1;i<n;i++){
-            System.out.println("--index-----("+i+")-------------");
-            lmax*=arr[i];
-            rmax*=arr[n-1-i];
-            System.out.println("--lmax-----("+lmax+")-------------");
-            System.out.println("---rmax----("+rmax+")-------------");
-            System.out.println("----maxProd-old--("+maxProd+")-------------");
-            maxProd = Math.max(maxProd,lmax);
-            maxProd = Math.max(maxProd, rmax);
-            System.out.println("----maxProd---("+maxProd+")-------------");
-            if(lmax==0){
-                lmax=1;
-            }
-            if(rmax==0){
-                rmax=1;
-            }
-            System.out.println();
-            System.out.println();
-            System.out.println();
-        }
-
-        return maxProd;
-    }
-
-
+public class Q4_SubarrayWithZeroSum {
+    
      // Function to check whether there is a subarray present with 0-sum or not.
     public static boolean findsum(int arr[]) {
         // Your code here
