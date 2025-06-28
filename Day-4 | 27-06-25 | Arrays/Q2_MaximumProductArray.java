@@ -1,24 +1,7 @@
-import java.util.ArrayList;
-import java.util.HashSet;
-
-public class Main {
-    public static ArrayList<Integer> findDuplicates(int[] nums) {
+public class Q2_MaximumProductArray {
+    
+     public static int maxProduct(int[] arr) {
         // code here
-       int n= nums.length;
-       ArrayList<Integer> result = new ArrayList<Integer>();
-       HashSet<Integer> s = new HashSet<>();
-        for(int i=0;i<n;i++){
-            boolean added = s.add(nums[i]);
-            if(!added){
-                result.add(nums[i]);
-            }
-        }
-        return result;
-    }
-
-    public static int maxProduct(int[] arr) {
-        // code here
-
         int n = arr.length;
         int lmax =arr[0];
         int rmax = arr[n-1];
