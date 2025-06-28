@@ -4,7 +4,7 @@ public class Q10_MinimizeTheHeights2 {
 
       public static int minmizeTheHieghts2(int[] arr, int k) {
 
-                int n = arr.length;
+        int n = arr.length;
         Arrays.sort(arr);
         
         if(n==1){

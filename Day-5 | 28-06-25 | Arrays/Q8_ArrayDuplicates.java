@@ -1,8 +1,8 @@
 import java.util.ArrayList;
 import java.util.HashSet;
 
-public class Main {
-    public static ArrayList<Integer> findDuplicates(int[] nums) {
+public class Q8_ArrayDuplicates {
+public static ArrayList<Integer> findDuplicates(int[] nums) {
         // code here
        int n= nums.length;
        ArrayList<Integer> result = new ArrayList<Integer>();
@@ -32,5 +32,5 @@ public class Main {
         int[] nums = {2, 3, 1, 2, 3};
         ArrayList<Integer> result = findDuplicates(nums);
         System.out.println(result);
-    }
+}
 }
