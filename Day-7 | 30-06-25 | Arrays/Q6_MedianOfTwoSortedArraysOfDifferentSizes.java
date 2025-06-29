@@ -10,4 +10,3 @@ public class Q6_MedianOfTwoSortedArraysOfDifferentSizes {
     }
 }
 
-Median of 2 Sorted Arrays of Different Sizes
