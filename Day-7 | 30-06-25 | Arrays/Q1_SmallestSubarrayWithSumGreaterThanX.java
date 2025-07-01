@@ -8,9 +8,7 @@ public class Q1_SmallestSubarrayWithSumGreaterThanX {
     }
 
     public static void main(String[] args) {
-        
+        //Smallest subarray with sum greater than x
     }
     
 }
-
-// Smallest subarray with sum greater than x
