@@ -6,6 +6,6 @@ public class Q3_MinimumSwapsSndKtogether {
     }
 
     public static void main(String[] args) {
-        
+      //  Minimum swaps and K together
     }
 }
