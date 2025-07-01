@@ -8,7 +8,7 @@ public class Q2_ThreeWayPartitioning {
         
     }
     public static void main(String[] args) {
-        
+        //Three way partitioning
     }
 }
 
