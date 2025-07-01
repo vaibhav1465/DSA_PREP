@@ -6,7 +6,7 @@ public class Q5_MedianOfAnArray {
         return 0.0;
     }
     public static void main(String[] args) {
-        
+        // Median of an Array
     }
 }
 
