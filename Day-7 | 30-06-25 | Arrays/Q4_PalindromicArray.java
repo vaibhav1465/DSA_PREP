@@ -6,6 +6,6 @@ public class Q4_PalindromicArray {
         return false;
     }
     public static void main(String[] args) {
-        
+        //Palindromic Array
     }
 }
