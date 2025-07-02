@@ -10,11 +10,7 @@ public class Q1_MoreThanNByKOccurances {
         HashMap<Integer, Integer> hm = new HashMap<>();
         int n = a.length;
         for (int i = 0; i < n; i++) {
-            Integer count = hm.get(a[i]);
-            if (count == null) {
-                count = 0;
-            }
-            hm.put(a[i], ++count);
+            hm.put(a[i], hm.getOrDefault(a[i], 0)+1);
         }
 
         int result = 0;
