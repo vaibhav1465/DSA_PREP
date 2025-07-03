@@ -6,7 +6,52 @@ import java.util.List;
 public class Q1_CommonIn3SortedArrays {
     
 
-    
+//     vector<int> commonElements(vector<int> &arr1, vector<int> &arr2, vector<int> &arr3) 
+// {
+//     // Get the sizes of the three arrays
+//     int n1 = arr1.size();
+//     int n2 = arr2.size();
+//     int n3 = arr3.size();
+
+//     // Start from the beginning of each array
+//     int i = 0, j = 0, k = 0;
+
+//     // This will store the common elements we find
+//     vector<int> ans;
+
+//     // Keep going until we reach the end of any one array
+//     while(i < n1 && j < n2 && k < n3)
+//     {
+//         // If the current elements in all three arrays are the same
+//         if(arr1[i] == arr2[j] && arr2[j] == arr3[k])
+//         {
+//             // Make sure we don't add the same element twice
+//             if(ans.empty() || ans.back() != arr1[i])
+//                 ans.push_back(arr1[i]);  // Add the common element
+
+//             // Move ahead in all three arrays since we found a match
+//             i++;
+//             j++;
+//             k++;
+//         }
+//         else
+//         {
+//             // Find out which of the current values is the smallest
+//             int mini = min({arr1[i], arr2[j], arr3[k]});
+
+//             // Move forward in whichever array had the smallest value
+//             // (Because that value can't be common if it's smaller than the others)
+//             if(arr1[i] == mini) i++;
+//             if(arr2[j] == mini) j++;
+//             if(arr3[k] == mini) k++;
+//         }
+//     }
+
+//     // Return the final list of common elements
+//     return ans;
+// }
+
+
     // Function to find common elements in three arrays.
     public static List<Integer> commonElements(List<Integer> arr1, List<Integer> arr2,
                                         List<Integer> arr3) {
