@@ -62,7 +62,6 @@ public class Q5_RearrangeArrayAlternately {
 
     public static void rearrange1(int arr[]) {
         // code here
-        // code here
         int n = arr.length;
         Arrays.sort(arr);
         for (int i = 0; i < n; i += 2) {
@@ -74,7 +73,6 @@ public class Q5_RearrangeArrayAlternately {
                 j--;
             }
         }
-
     }
 
     public static void rearrange(int arr[]) {
