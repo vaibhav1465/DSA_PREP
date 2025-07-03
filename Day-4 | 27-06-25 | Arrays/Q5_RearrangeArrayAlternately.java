@@ -85,13 +85,13 @@ public class Q5_RearrangeArrayAlternately {
     	{
     	    if(i%2==0)
     	    {
-                System.out.println((arr[lastidx]%maxi) +"-----"+ maxi);
+                System.out.println((arr[lastidx]%maxi) +"-----"+ maxi+"---"+i);
     	        arr[i]+=(arr[lastidx]%maxi)*maxi;
     	        lastidx--;
     	    }
     	    else
     	    {
-             System.out.println((arr[firstidx]%maxi)+"****"+maxi);
+             System.out.println((arr[firstidx]%maxi)+"****"+maxi+"----"+i);
     	    arr[i]+=(arr[firstidx]%maxi)*maxi;
     	        firstidx++;
     	    }
