@@ -42,6 +42,7 @@ public class Q6_OverlappingIntervals {
 
     public static void main(String[] args) {
 
+        // Merge Overlapping Intervals
         // Input: arr[][] = [[1,3],[2,4],[6,8],[9,10]]
         // Output: [[1,4], [6,8], [9,10]]
         // Explanation: In the given intervals we have only two overlapping intervals
