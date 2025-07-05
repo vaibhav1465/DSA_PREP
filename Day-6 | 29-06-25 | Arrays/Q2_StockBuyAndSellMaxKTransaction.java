@@ -6,6 +6,6 @@ public class Q2_StockBuyAndSellMaxKTransaction {
     }
     public static void main(String[] args) {
         
-        // Stock Buy and Sell – Max K Transactions Allowe
+        // Stock Buy and Sell – Max K Transactions Allowed
     }
 }
