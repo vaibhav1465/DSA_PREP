@@ -1,7 +1,7 @@
 public class Q7_MergeWithoutExtraSpace {
  
     // Function to merge the arrays.
-    public void mergeArrays(int a[], int b[]) {
+    public static void mergeArrays(int a[], int b[]) {
         // code here
         
     }
