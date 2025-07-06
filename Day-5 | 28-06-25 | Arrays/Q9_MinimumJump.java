@@ -1,7 +1,7 @@
 
 public class Q9_MinimumJump {
 
-    static int minJumps(int[] arr) {
+    public static int minJumps(int[] arr) {
         // code here
         
     }
