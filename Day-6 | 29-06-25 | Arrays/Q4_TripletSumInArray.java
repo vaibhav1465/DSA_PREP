@@ -56,7 +56,7 @@ public class Q4_TripletSumInArray {
 
     public static void main(String[] args) {
 
-        // Triplet Sum in Array ques
+        // Triplet Sum in Array 
 
         // Examples
         // Input: arr[] = [1, 4, 45, 6, 10, 8], target = 13
