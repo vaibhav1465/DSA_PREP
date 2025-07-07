@@ -16,7 +16,7 @@ public class Q5_MedianOfAnArray {
         }
     }
     public static void main(String[] args) {
-        // Median of an Array
+        // Median of an Array QUES
         // Examples:
         // Input: arr[] = [90, 100, 78, 89, 67]
         // Output: 89
