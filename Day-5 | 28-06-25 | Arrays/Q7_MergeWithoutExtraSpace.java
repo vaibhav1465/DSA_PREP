@@ -12,6 +12,28 @@ public class Q7_MergeWithoutExtraSpace {
 
     }
 
+      static void mergeArrays(int[] a, int[] b) {
+      
+        // Traverse b[] starting from the last element
+        for (int i = b.length - 1; i >= 0; i--) {
+          
+            // If b[i] is smaller than the largest element of a[]
+            if (a[a.length - 1] > b[i]) {
+              
+                // Place b[i] in the correct position in a[], 
+                // and move last element of a[] to b[]
+                int last = a[a.length - 1];
+                int j = a.length - 2;
+                while (j >= 0 && a[j] > b[i]) {
+                    a[j + 1] = a[j];
+                    j--;
+                }
+                a[j + 1] = b[i];
+                b[i] = last;
+            }
+        }
+    }
+
     public static void mergeArrays2(int a[], int b[]) { // litle more optimise
         // code here
         int n = a.length;
