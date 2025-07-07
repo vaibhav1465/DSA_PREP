@@ -14,6 +14,10 @@ public class boilerPlateCodeForArrayQues {
         
         int[] nums = {};
         int result = functionName(nums);
+        for(int i=0;i<nums.length;i++){
+            System.out.print(nums[i]+" ");
+        }
+        System.out.println();
         System.out.println("result "+result);
     }
 }
