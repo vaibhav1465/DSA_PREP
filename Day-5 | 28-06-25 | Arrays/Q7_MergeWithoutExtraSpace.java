@@ -36,13 +36,38 @@ public class Q7_MergeWithoutExtraSpace {
     }
      public static void mergeArrays3(int a[], int b[]) { // Gap Method
         // code here
-        
+        int n = a.length;
+        int m = b.length;
+
+        int gap = (m+n)/ 2 +(m+n)%2;
+
+        while (gap>0) {
+            int start = 0;
+            int end = start+gap;
+            while (end < (n+m) ) {
+                if(a[start] > b[end]){
+                  if(start < n && end <n){
+                    int temp = a[start];
+                    a[start]=a[end];
+                    a[end]=temp;  
+                  }else if(start>n){
+                    int temp = b[start];
+                    b[start]=a[end];
+                    b[end]=temp;  
+                  }else{
+                    int temp = a[start];
+                    a[start]=b[end];
+                    b[end]=temp;  
+                  }
+                }
+                start++;
+                end++;
+            }
+            gap = gap/2 + gap%2; 
+        }
     }
     public static void main(String[] args) {
         // Merge Without Extra Space
-
-
-        
         // Examples:
         // Input: a[] = [2, 4, 7, 10], b[] = [2, 3]
         // Output:
