@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Q7_MergeWithoutExtraSpace {
  
     // Function to merge the arrays.
@@ -11,6 +13,25 @@ public class Q7_MergeWithoutExtraSpace {
     }
      public static void mergeArrays2(int a[], int b[]) { // litle more optimise
         // code here
+        int n = a.length;
+        int m = b.length;
+        int alast = n-1;
+        int bfirst = 0;
+
+        while (alast>=0 && bfirst<=m-1) {
+            if(a[alast]>b[bfirst]){
+                int temp = a[alast];
+                a[alast]=b[bfirst];
+                b[bfirst]=temp;
+            }else{
+                break;
+            }
+            alast--;
+            bfirst++;
+        }
+
+        Arrays.sort(a);
+        Arrays.sort(b);
         
     }
      public static void mergeArrays3(int a[], int b[]) { // Gap Method
@@ -21,6 +42,7 @@ public class Q7_MergeWithoutExtraSpace {
         // Merge Without Extra Space
 
 
+        
         // Examples:
         // Input: a[] = [2, 4, 7, 10], b[] = [2, 3]
         // Output:
@@ -41,7 +63,7 @@ public class Q7_MergeWithoutExtraSpace {
 
         int[] a = {2, 4, 7, 10};
         int[] b = {2, 3};
-        mergeArrays(a,b);
+        mergeArrays2(a,b);
         for(int i=0;i<a.length;i++){
             System.out.print(a[i]+" ");
         }
