@@ -7,16 +7,22 @@ public class Q3_StockBuyAndSell {
         int s= a[0];
         int n = a.length;
         int intervalProfit = 0;
+        // 63, 17, 59, 6, 8, 7, 52, 50, 20
         for(int i=1;i<n;i++){
-           if(a[i]>s){
+           if(a[i]>s && a[i]>a[i-1]){
+            // System.out.println(intervalProfit+" s "+s+" a[i] "+a[i]+" profit "+profit);
             intervalProfit = Math.max(intervalProfit, a[i]-s);
-           }else{
-            profit+=intervalProfit;
-            s=a[i];
-            intervalProfit=0;
+            // System.out.println(intervalProfit);
+           }else if(a[i]<a[i-1] || a[i]<s){
+               profit+=intervalProfit;
+               s=a[i];
+               intervalProfit=0;
+            //    System.out.println("in this "+s);
            }
         }
-
+        if(intervalProfit>0){
+            profit+=intervalProfit;
+        }
         return profit;
         
     }
@@ -35,8 +41,10 @@ public class Q3_StockBuyAndSell {
         // Output: 0
         // Explanation: Don't Buy the stock.
 
-
-        int[] nums = {100, 180, 260, 310, 40, 535, 695};
+        // 59-17=42
+        // 8-6 =2
+        // 52-7 = 45
+        int[] nums = {63, 17, 59, 6, 20,7, 52, 50, 20};
         int result = stockBuySell(nums);
         System.out.println("result "+result);
 
