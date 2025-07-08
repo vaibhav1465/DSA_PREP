@@ -38,10 +38,6 @@ public class Q3_StockBuyAndSell {
 
         int[] nums = {100, 180, 260, 310, 40, 535, 695};
         int result = stockBuySell(nums);
-        // for(int i=0;i<nums.length;i++){
-        //     System.out.print(nums[i]+" ");
-        // }
-        // System.out.println();
         System.out.println("result "+result);
 
 
