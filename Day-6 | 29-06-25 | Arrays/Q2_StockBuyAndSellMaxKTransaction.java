@@ -4,6 +4,7 @@ public class Q2_StockBuyAndSellMaxKTransaction {
 
         int profit = 0;
 
+        int profitArray=
         for (int i = 1; i < arr.length; i++) {
             if (arr[i - 1] < arr[i]) {
                 profit += arr[i] - arr[i - 1];
@@ -33,6 +34,10 @@ public class Q2_StockBuyAndSellMaxKTransaction {
         // Explaination: Selling price is decreasing continuously
         // leading to loss. So seller cannot have any profit.
 
-        
+        int[] nums = {10, 22, 5, 80};
+        int result = maxProfit(nums,2);
+        System.out.println("result "+result);
+
+
     }
 }
