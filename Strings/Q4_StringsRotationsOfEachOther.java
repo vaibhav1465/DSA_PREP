@@ -3,15 +3,18 @@ public class Q4_StringsRotationsOfEachOther {
     public static boolean areRotations(String s1, String s2) {
         // code here
 
-        for(int i=0;i<s1.length();i++){
-            String temp = s1.substring(1) + s1.charAt(0);
-            if(s2.equals(temp)){
-                return true;
-            }
-            s1=temp;
-        }
+        // for(int i=0;i<s1.length();i++){
+        //     String temp = s1.substring(1) + s1.charAt(0);
+        //     if(s2.equals(temp)){
+        //         return true;
+        //     }
+        //     s1=temp;
+        // }
 
-        return false;
+        // return false;
+
+        return (s1.length() == s2.length()) && ((s1 + s1).contains(s2));
+
     }
 
     public static void main(String[] args) {
