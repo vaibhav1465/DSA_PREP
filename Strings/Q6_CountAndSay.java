@@ -5,7 +5,7 @@ public class Q6_CountAndSay {
     String s1 ="";
     char t = temp.charAt(0);
     int count =0;
-    // System.out.println(temp+"-----"+v);
+    System.out.println(temp+"-----"+v);
     for(int i=0;i<temp.length();i++){
         if(t==temp.charAt(i)){
           count++;
