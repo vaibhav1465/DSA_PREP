@@ -11,7 +11,7 @@ public class Q6_CountAndSay {
           count++;
         }else{
             s1=s1+count+t;
-            // System.out.println(s1);
+            System.out.println(s1);
             t=temp.charAt(i);
             count=1;
         }
