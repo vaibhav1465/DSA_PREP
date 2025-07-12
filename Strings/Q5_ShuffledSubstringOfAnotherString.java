@@ -2,7 +2,7 @@ public class Q5_ShuffledSubstringOfAnotherString {
 
     public  static boolean validShuffledSubstring(String s1,String s2){
 
-        System.out.println(s1);
+        System.out.println(s2);
 
         return false;
     }
