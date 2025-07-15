@@ -4,7 +4,7 @@ public class Q11_PermutationsOfString {
 
     public static ArrayList<String> findPermutation(String s) {
         // Code here
-        ArrayList<String> reesult = new ArrayList<>();
+        ArrayList<String> result = new ArrayList<>();
 
         return result;
     }
