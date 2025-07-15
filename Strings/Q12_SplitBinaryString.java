@@ -7,6 +7,7 @@ public class Q12_SplitBinaryString {
     }
 
     public static void main(String[] args) {
+        //Split the binary string into substrings with equal number of 0s and 1s
         // Example 1:
         // Input:
         // S = "0100110101"
