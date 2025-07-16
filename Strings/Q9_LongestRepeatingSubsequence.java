@@ -6,8 +6,7 @@ public class Q9_LongestRepeatingSubsequence {
     }
     public static void main(String[] args) {
         //Longest Repeating Subsequence
-
-
+        
         // Input: s = "axxzxy"
         // Output: 2
         // Explanation: The given array with indexes looks like
