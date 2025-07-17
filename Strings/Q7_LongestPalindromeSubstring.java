@@ -24,7 +24,6 @@ public class Q7_LongestPalindromeSubstring {
             }
 
             if (i + 1 < l && s.charAt(i) == s.charAt(i + 1)) {
-                // System.out.println("2222222222222--------"+s.substring(i, i+2));
                 if (max < 2) {
                     max = 2;
                     subringIndexStart = i;
