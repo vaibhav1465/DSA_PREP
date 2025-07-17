@@ -33,7 +33,6 @@ public class Q7_LongestPalindromeSubstring {
                 x = i-1;
                 y = i + 2;
                 while (x >= 0 && y < l && s.charAt(x) == s.charAt(y)) {
-                    // System.out.println("3333333333--------"+s.substring(x, y+1));
                     if (max < y - x + 1) {
                         max = y - x + 1;
                         subringIndexStart = x;
