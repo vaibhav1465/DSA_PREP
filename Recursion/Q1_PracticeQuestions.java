@@ -4,9 +4,9 @@ public class Q1_PracticeQuestions {
     public static void print1ToN(){
 
     }
-    // public static void printNTo1(){
+    public static void printNTo1(){
 
-    // }
+    }
     // public static void print1ToNBackTracking(){
 
     // }
