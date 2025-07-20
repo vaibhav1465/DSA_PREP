@@ -25,5 +25,6 @@ public class Q1_PracticeQuestions {
         // Count all subsequennce of array
 
         // merge sort
+        // quick Sort
     }
 }
