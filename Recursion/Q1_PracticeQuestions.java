@@ -18,6 +18,7 @@ public class Q1_PracticeQuestions {
 
 
         // reverse a array
+        // check if array is palindrome
 
         // Print all subsequennce of array
         // Print one subsquence of array
