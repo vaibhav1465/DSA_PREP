@@ -16,6 +16,9 @@ public class Q1_PracticeQuestions {
     public static void main(String[] args) {
         // Recursion
 
+
+        // reverse a array
+
         // Print all subsequennce of array
         // Print one subsquence of array
         // Count all subsequennce of array
