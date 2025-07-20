@@ -17,5 +17,6 @@ public class Q1_PracticeQuestions {
         // Recursion
 
         // Print all subsequennce of array
+        // Print one subsquence of array
     }
 }
