@@ -3,11 +3,12 @@ package Recursion;
 import java.util.ArrayList;
 
 public class Q3_PrintAllSubsequenceOfArray {
-    public static ArrayList<ArrayList<Integer>> printAllSubsequenceOfArray(ArrayList<ArrayList<Integer>> res){
-        return  res;
+    public static void printAllSubsequenceOfArray(ArrayList<ArrayList<Integer>> res){
     }
-    public static ArrayList<Integer> printOneSubsequenceOfArray(ArrayList<Integer> res){
-        return  res;
+    public static void printOneSubsequenceOfArray(ArrayList<Integer> res){
+    }
+    public static int countAllSubsequenceOfArray(){
+        return  1;
     }
     public static void main(String[] args) {
 
@@ -18,7 +19,7 @@ public class Q3_PrintAllSubsequenceOfArray {
         ArrayList<Integer> result2 = new ArrayList<>();
         printOneSubsequenceOfArray(result2);
 
-
+        int result3 = countAllSubsequenceOfArray();
 
 
     }
