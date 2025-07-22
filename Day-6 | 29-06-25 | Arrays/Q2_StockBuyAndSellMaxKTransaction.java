@@ -4,7 +4,7 @@ public class Q2_StockBuyAndSellMaxKTransaction {
 
         int profit = 0;
 
-        int profitArray=
+//        int profitArray=profitArray
         for (int i = 1; i < arr.length; i++) {
             if (arr[i - 1] < arr[i]) {
                 profit += arr[i] - arr[i - 1];
