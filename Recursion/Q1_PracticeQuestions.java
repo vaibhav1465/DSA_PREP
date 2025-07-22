@@ -17,11 +17,22 @@ public class Q1_PracticeQuestions {
         System.out.println(n);
         printNTo1(n-1);
     }
-    public static void print1ToNBackTracking(){
+    public static void print1ToNBackTracking(int n){
+        if(n==1){
+            System.out.println(n);
+            return;
+        }
+        print1ToNBackTracking(n-1);
+        System.out.println(n);
 
     }
-    public static void printNToNBackTracking(){
-
+    public static void printNToNBackTracking(int s,int e){
+        if(s==e){
+            System.out.println(e);
+            return;
+        }
+        printNToNBackTracking(s+1,e);
+        System.out.println(s);
     }
     public static void main(String[] args) {
         // Recursion
@@ -45,6 +56,10 @@ public class Q1_PracticeQuestions {
         int n = 6;
 //        print1ToN(1,n);
 
-        printNTo1(n);
+//        printNTo1(n);
+//          print1ToNBackTracking(n);
+//        printNToNBackTracking(n);
+        printNToNBackTracking(1,n);
     }
+
 }
