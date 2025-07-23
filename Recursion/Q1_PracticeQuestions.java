@@ -53,7 +53,8 @@ public class Q1_PracticeQuestions {
 
         // subset sum 2 2
 
-        // permutation
+        // all permutation
+        // 
 
         int n = 6;
 //        print1ToN(1,n);
