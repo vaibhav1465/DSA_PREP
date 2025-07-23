@@ -55,6 +55,7 @@ public class Q1_PracticeQuestions {
 
         // all permutation 
         //  subset both problems
+        // n qeeen
 
         int n = 6;
 //        print1ToN(1,n);
