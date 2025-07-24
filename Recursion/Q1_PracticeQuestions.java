@@ -56,7 +56,7 @@ public class Q1_PracticeQuestions {
         // all permutation 
         //  subset both problems
         // n qeeen
-        // sudoker done 1
+        // sudoker done
 
         int n = 6;
 //        print1ToN(1,n);
