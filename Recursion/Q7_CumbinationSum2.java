@@ -23,23 +23,29 @@ public class Q7_CumbinationSum2 {
         }
         if(sum-arr[idx]>=0) {
             ds.add(arr[idx]);
-            cumbinationSum(arr, idx, sum - arr[idx], ds, res);
+            cumbinationSum2(arr, idx+1, sum - arr[idx], ds, res);
             ds.remove(ds.size()-1);
         }
-        cumbinationSum(arr, idx+1, sum, ds, res);
+        cumbinationSum2(arr, idx+1, sum, ds, res);
 
     }
     public static void main(String[] args) {
-//        Input : candidates = [2, 3, 5, 4] , target = 7
-//        Output : [ [2, 2, 3] , [3, 4] , [5, 2] ]
-//        Explanation :
-//        2 and 3 are candidates, and 2 + 2 + 3 = 7. Note that 2 can be used multiple times.
-//        5 and 2 are candidates, and 5 + 2 = 7.
-//        3 and 4 are candidates, and 3 + 4 = 7.
-//        There are total three combinations.
+//        Example 1:
+//        Input: candidates = [10,1,2,7,6,1,5], target = 8
+//        Output:
+//            [
+//            [1,1,6],
+//            [1,2,5],
+//            [1,7],
+//            [2,6]]
+//        Explanation: These are the unique combinations whose sum is equal to target.
+//                Example 2:
+//        Input: candidates = [2,5,2,1,2], target = 5
+//        Output: [[1,2,2],[5]]
+//        Explanation: These are the unique combinations whose sum is equal to target.
 
-        int[] arr = new int[]{2,3,5,4};
-        int sum =7;
+        int[] arr = new int[]{10,1,2,7,6,1,5};
+        int sum =8;
         List<Integer> ds = new ArrayList<>();
         List<List<Integer>> res = new ArrayList<>();
         cumbinationSum2(arr,0,sum,ds,res);
