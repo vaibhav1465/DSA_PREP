@@ -49,7 +49,6 @@ public class Q7_CumbinationSum2 {
         List<Integer> ds = new ArrayList<>();
         List<List<Integer>> res = new ArrayList<>();
         cumbinationSum2(arr,0,sum,ds,res);
-        
         System.out.println(res);
     }
 }
