@@ -11,7 +11,7 @@ public class Q7_CumbinationSum2 {
         System.out.println();
         System.out.println();
         if(idx == arr.length){
-            System.out.println("----here----"+idx+ds);
+            System.out.println("----here-- --"+idx+ds);
             System.out.println();
             System.out.println();
             return;
