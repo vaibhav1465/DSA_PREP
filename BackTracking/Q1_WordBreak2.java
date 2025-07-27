@@ -6,24 +6,30 @@ import java.util.Arrays;
 public class Q1_WordBreak2 {
 
 
-    public static  void solveWordBreak2(ArrayList<String> dict, String s, int idx, StringBuilder ds, ArrayList<String> res){
+    public static  void solveWordBreak2(ArrayList<String> dict, String s, int idx, ArrayList<String> ds, ArrayList<String> res){
 
         System.out.println(dict+" "+idx+" "+ds);
         if(idx==s.length()){
-            System.out.println(ds);
-            res.add(new String(ds));
+            StringBuilder sb = new StringBuilder();
+            for (int i = 0; i < ds.size(); i++) {
+                sb.append(ds.get(i));
+                if (i < ds.size() - 1) {
+                    sb.append(" ");
+                }
+            }
+            String temp = sb.toString();
+            res.add(temp);
             return;
         }
+
 
         StringBuilder temp = new StringBuilder();
         for(int i=idx;i<s.length();i++){
             temp.append(s.charAt(i));
             if(dict.contains(temp.toString())){
-                ds.append(temp+" ");
-                System.out.println(idx+"---"+(i+1));
+                ds.add(temp.toString());
                 solveWordBreak2(dict,s,i+1,ds,res);
-                System.out.println(idx+"---"+(i+2));
-                ds.delete(idx,i+2);
+                ds.remove(ds.size()-1);
             }
         }
     }
@@ -32,7 +38,7 @@ public class Q1_WordBreak2 {
         // code here
 
         ArrayList<String> res = new ArrayList<>();
-        StringBuilder ds = new StringBuilder();
+        ArrayList<String> ds = new ArrayList<>();
         ArrayList<String> dicts = new ArrayList<>(Arrays.asList(dict));
         solveWordBreak2(dicts,s,0,ds,res);
         String[] result = new String[res.size()];
@@ -61,7 +67,7 @@ public class Q1_WordBreak2 {
 //        Output: "geeks for geeks"
 //        Explanation: The string "geeksforgeeks" can be broken into valid words from the dictionary in one way.
 //
-        String[] dict = new String[]{"lik", "for", "geeks", "gfg"};
+        String[] dict = new String[]{"gee", "for", "geeks", "ks"};
         String s = "geeksforgeeks";
         worldBreak(dict,s);
     }
