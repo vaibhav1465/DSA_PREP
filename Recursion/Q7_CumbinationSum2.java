@@ -1,6 +1,6 @@
-package Recursion;
-
+import java.sql.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Q7_CumbinationSum2 {
@@ -10,15 +10,15 @@ public class Q7_CumbinationSum2 {
         System.out.println(sum);
         System.out.println();
         System.out.println();
+        if(sum == 0){
+            System.out.println(ds);
+            res.add(new ArrayList<>(ds));
+            return;
+        }
         if(idx == arr.length){
             System.out.println("----here-- --"+idx+ds);
             System.out.println();
             System.out.println();
-            return;
-        }
-        if(sum == 0){
-            System.out.println(ds);
-            res.add(new ArrayList<>(ds));
             return;
         }
         if(sum-arr[idx]>=0) {
@@ -46,6 +46,7 @@ public class Q7_CumbinationSum2 {
 
         int[] arr = new int[]{10,1,2,7,6,1,5};
         int sum =8;
+        Arrays.sort(arr);
         List<Integer> ds = new ArrayList<>();
         List<List<Integer>> res = new ArrayList<>();
         cumbinationSum2(arr,0,sum,ds,res);
