@@ -5,7 +5,7 @@ public class Q5_PartitionArrayTokSubsets {
     public static String kthPermutation(int n, int k) {
         // code here
 
-        int total = ;
+        return "";
     }
     public static void main(String[] args) {
       int n=3;
