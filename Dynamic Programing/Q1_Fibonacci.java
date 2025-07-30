@@ -3,6 +3,6 @@ public class Q1_Fibonacci {
         // FIBONACCI
         // Tabulation
         // Memoisation
-        // frog
+        // frog run
     }
 }
