@@ -4,5 +4,6 @@ public class Q1_Fibonacci {
         // Tabulation
         // Memoisation
         // frog run challenge
+        // frog jum
     }
 }
