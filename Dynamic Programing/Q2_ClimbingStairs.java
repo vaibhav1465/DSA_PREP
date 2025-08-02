@@ -1,14 +1,13 @@
-public class Q1_Fibonacci {
-
-    public static int fibonacci(int n,int[] dp){
+public class Q2_ClimbingStairs {
+    public static int climbing(int n,int[] dp){
 
         if(dp[n]!=-1){
             return dp[n];
         }
         if(n<=1){
-            return n;
+            return 1;
         }
-        return dp[n] = fibonacci(n - 1, dp) + fibonacci(n - 2, dp);
+        return dp[n] = climbing(n - 1, dp) + climbing(n - 2, dp);
     }
 
     public static void main(String[] args) {
@@ -19,7 +18,7 @@ public class Q1_Fibonacci {
         for(int i=0;i<=n;i++){
             dp[i]=-1;
         }
-        int result =fibonacci(n,dp);
+        int result =climbing(n,dp);
         System.out.println(result);
 //        for(int i=0;i<=n;i++){
 //            System.out.print(dp[i]+" ");
