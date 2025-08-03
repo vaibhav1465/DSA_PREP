@@ -33,7 +33,8 @@ public class Q4_FrogJumpByKStep {
         int result =  frogJumpByKSteps(a,n-1,k,dp);
         System.out.println(result);
 
-     // house of robbers
+
+        // house of robbers
         // maxisum sum of non adacent
 
     }
