@@ -36,7 +36,7 @@ public class Q4_FrogJumpByKStep {
 
         // house of robbers
         // maxisum sum of non adacent
-        // 2d array questions dp
+        // 2d array questions dp 1
 
     }
 }
